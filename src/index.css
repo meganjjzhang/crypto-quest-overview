@@ -72,5 +72,23 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+/* Neo Brutalist Theme */
+body {
+  @apply font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-black;
+}
+
+button, .button {
+  @apply bg-black text-white font-bold py-2 px-4 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none transition-shadow duration-300;
+}
+
+input, select, textarea {
+  @apply border-4 border-black p-2 bg-white;
 }
